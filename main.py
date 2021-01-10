@@ -1287,7 +1287,7 @@ def data7(text):
         "action": {
           "type": "postback",
           "label": "はい",
-          "data": "ok2",
+          "data": "ok3",
           "displayText": "OK!"
         }
       },
@@ -1298,7 +1298,7 @@ def data7(text):
         "action": {
           "type": "postback",
           "label": "いいえ",
-          "data": "no2",
+          "data": "no3",
           "displayText": "もう一度設定！"
         }
       },
