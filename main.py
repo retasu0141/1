@@ -1404,7 +1404,7 @@ def on_postback(event):
 
     if "no3" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 8:
         set[user_id]['n'] = 7
-        data = data2()
+        data = data4()
         flex = {"type": "flex","altText": "twitter登録","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
