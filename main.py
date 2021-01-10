@@ -1265,56 +1265,56 @@ def on_postback(event):
     user_id = event.source.user_id
     postback_msg = event.postback.data
 
-    if "注意事項" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 1:
+    if "注意事項" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 1:
         set[user_id]['n'] = 2
         data = attention()
         flex = {"type": "flex","altText": "注意事項","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "twitter" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 2:
+    if "twitter" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 2:
         set[user_id]['n'] = 3
         data = twitter()
         flex = {"type": "flex","altText": "twitter登録","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "no" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 4:
+    if "no" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 4:
         set[user_id]['n'] = 3
         data = twitter()
         flex = {"type": "flex","altText": "twitter登録","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "ok" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 4:
+    if "ok" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 4:
         set[user_id]['n'] = 5
         data = data2()
         flex = {"type": "flex","altText": "動画編集歴","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "no2" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 6:
+    if "no2" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 6:
         set[user_id]['n'] = 5
         data = data2()
         flex = {"type": "flex","altText": "twitter登録","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "ok2" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 6:
+    if "ok2" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 6:
         set[user_id]['n'] = 7
         data = data4()
         flex = {"type": "flex","altText": "目標","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "no3" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 8:
+    if "no3" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 8:
         set[user_id]['n'] = 7
         data = data2()
         flex = {"type": "flex","altText": "twitter登録","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "ok3" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id][n] == 8:
+    if "ok3" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 8:
         set[user_id]['n'] = 9
         text = text(user_id)
         line_bot_api.multicast(['U76d18383a9b659b9ab3d0e43d06c1e78'],TextSendMessage(text='誰かが参加しようとしています！\n[詳細]\nTwitter:{twitter}\n動画編集歴:{d_n}\n目標:{d_t}'.format(twitter=set[user_id][twitter],d_n=set[user_id][d_n],d_t=set[user_id][d_t])))
@@ -1351,7 +1351,7 @@ def handle_message(event):
         return
 
     else:
-        if user_id == set[user_id]['user_id'] and set[user_id][n] == 3:
+        if user_id == set[user_id]['user_id'] and set[user_id]['n'] == 3:
             set[user_id]['n'] = 4
             set[user_id]['twitter'] = msg_text
             data = data1(set[user_id]['twitter'])
@@ -1359,7 +1359,7 @@ def handle_message(event):
             container_obj = FlexSendMessage.new_from_json_dict(flex)
             line_bot_api.reply_message(msg_from,messages=container_obj)
             return
-        if user_id == set[user_id]['user_id'] and set[user_id][n] == 5:
+        if user_id == set[user_id]['user_id'] and set[user_id]['n'] == 5:
             set[user_id]['n'] = 6
             set[user_id]['d_n'] = msg_text
             data = data3(set[user_id]['d_n'])
@@ -1367,7 +1367,7 @@ def handle_message(event):
             container_obj = FlexSendMessage.new_from_json_dict(flex)
             line_bot_api.reply_message(msg_from,messages=container_obj)
             return
-        if user_id == set[user_id]['user_id'] and set[user_id][n] == 7:
+        if user_id == set[user_id]['user_id'] and set[user_id]['n'] == 7:
             set[user_id]['n'] = 8
             set[user_id]['d_t'] = msg_text
             data = data3(set[user_id]['d_t'])
