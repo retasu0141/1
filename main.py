@@ -871,7 +871,7 @@ def data3(data_):
         "action": {
           "type": "postback",
           "label": "はい",
-          "data": "ok2",
+          "data": "ok3",
           "displayText": "OK!"
         }
       },
@@ -882,7 +882,7 @@ def data3(data_):
         "action": {
           "type": "postback",
           "label": "いいえ",
-          "data": "no2",
+          "data": "no3",
           "displayText": "もう一度設定！"
         }
       },
@@ -1323,7 +1323,7 @@ def on_postback(event):
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "受け取る" in postback_msg:
+    if "受け取る" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 9:
         data = data6()
         flex = {"type": "flex","altText": "入ろう！","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
