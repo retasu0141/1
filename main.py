@@ -871,7 +871,7 @@ def data3(data_):
         "action": {
           "type": "postback",
           "label": "はい",
-          "data": "ok3",
+          "data": "ok2",
           "displayText": "OK!"
         }
       },
@@ -882,7 +882,7 @@ def data3(data_):
         "action": {
           "type": "postback",
           "label": "いいえ",
-          "data": "no3",
+          "data": "no2",
           "displayText": "もう一度設定！"
         }
       },
@@ -1216,6 +1216,101 @@ def data6():
 }
     return data
 
+def data7(text):
+    data = {
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://cdn.pixabay.com/photo/2018/06/12/15/08/question-mark-3470783_1280.jpg",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "http://linecorp.com/"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "目標登録の確認",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "目標は以下の内容で大丈夫ですか？",
+        "weight": "bold",
+        "size": "xs",
+        "align": "center",
+        "margin": "md"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": text,
+                "wrap": True,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5,
+                "align": "center"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
+        "action": {
+          "type": "postback",
+          "label": "はい",
+          "data": "ok2",
+          "displayText": "OK!"
+        }
+      },
+      {
+        "type": "button",
+        "style": "secondary",
+        "height": "sm",
+        "action": {
+          "type": "postback",
+          "label": "いいえ",
+          "data": "no2",
+          "displayText": "もう一度設定！"
+        }
+      },
+      {
+        "type": "spacer",
+        "size": "sm"
+      }
+    ],
+    "flex": 0
+  }
+}
+    return data
 
 def text(user_id):
     data = '名前:自分の名前を入力\n自分のTwitter:{twitter}\n動画編集歴:{d_n}\nこれからの目標:{d_t}\nみんなへ一言:'.format(twitter=set[user_id][twitter],d_n=set[user_id][d_n],d_t=set[user_id][d_t])
@@ -1370,7 +1465,7 @@ def handle_message(event):
         if user_id == set[user_id]['user_id'] and set[user_id]['n'] == 7:
             set[user_id]['n'] = 8
             set[user_id]['d_t'] = msg_text
-            data = data3(set[user_id]['d_t'])
+            data = data7(set[user_id]['d_t'])
             flex = {"type": "flex","altText": "確認","contents":data}
             container_obj = FlexSendMessage.new_from_json_dict(flex)
             line_bot_api.reply_message(msg_from,messages=container_obj)
