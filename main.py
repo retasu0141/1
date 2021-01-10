@@ -84,7 +84,7 @@ def syoukai():
               {
                 "type": "text",
                 "text": "入るにあたっての注意事項の説明",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -102,7 +102,7 @@ def syoukai():
           {
             "type": "text",
             "text": "自分のTwitterの登録",
-            "wrap": true,
+            "wrap": True,
             "color": "#666666",
             "size": "sm",
             "flex": 5,
@@ -119,7 +119,7 @@ def syoukai():
           {
             "type": "text",
             "text": "動画編集歴の登録",
-            "wrap": true,
+            "wrap": True,
             "color": "#666666",
             "size": "sm",
             "flex": 5,
@@ -135,7 +135,7 @@ def syoukai():
           {
             "type": "text",
             "text": "自分のこれからの目標の登録",
-            "wrap": true,
+            "wrap": True,
             "color": "#666666",
             "size": "sm",
             "flex": 5,
@@ -151,7 +151,7 @@ def syoukai():
           {
             "type": "text",
             "text": "参加後ノートに作成する自己紹介文配布",
-            "wrap": true,
+            "wrap": True,
             "color": "#666666",
             "size": "sm",
             "flex": 5,
@@ -167,7 +167,7 @@ def syoukai():
           {
             "type": "text",
             "text": "動画編集者の森へ招待！",
-            "wrap": true,
+            "wrap": True,
             "color": "#666666",
             "size": "sm",
             "flex": 5,
@@ -265,7 +265,7 @@ def attention():
               {
                 "type": "text",
                 "text": "ツイッターのアカウント名で参加する。",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5
@@ -287,7 +287,7 @@ def attention():
               {
                 "type": "text",
                 "text": "モラルに反する発言をしない。",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5
@@ -379,7 +379,7 @@ def twitter():
               {
                 "type": "text",
                 "text": "・集まれ動画編集の森では信頼を大切にしています。",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -395,7 +395,7 @@ def twitter():
               {
                 "type": "text",
                 "text": "・信頼関係をつくる為、Twitterの名前での参加がルールで決まっています。",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -410,7 +410,7 @@ def twitter():
             "contents": [
               {
                 "type": "text",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -459,7 +459,7 @@ def twitter():
               {
                 "type": "text",
                 "text": "[Twitterリンク例]",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -475,7 +475,7 @@ def twitter():
               {
                 "type": "text",
                 "text": "https://twitter.com/retasu_0141",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -491,7 +491,7 @@ def twitter():
               {
                 "type": "text",
                 "text": "[Twitter id例]",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -507,7 +507,7 @@ def twitter():
               {
                 "type": "text",
                 "text": "@retasu_0141",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -597,7 +597,7 @@ def data1(twitter):
               {
                 "type": "text",
                 "text": twitter,
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -684,7 +684,7 @@ def data2():
             "contents": [
               {
                 "type": "text",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -709,7 +709,7 @@ def data2():
               {
                 "type": "text",
                 "text": "[動画編集歴 例]",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -725,7 +725,7 @@ def data2():
               {
                 "type": "text",
                 "text": "2020年6月辺りから",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -741,7 +741,7 @@ def data2():
               {
                 "type": "text",
                 "text": "[動画編集歴 例2]",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -757,7 +757,7 @@ def data2():
               {
                 "type": "text",
                 "text": "最近始めたばかり",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -847,7 +847,7 @@ def data3(data_):
               {
                 "type": "text",
                 "text": data_,
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -934,7 +934,7 @@ def data4():
             "contents": [
               {
                 "type": "text",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -959,7 +959,7 @@ def data4():
               {
                 "type": "text",
                 "text": "[目標 例]",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -975,7 +975,7 @@ def data4():
               {
                 "type": "text",
                 "text": "まずは案件を獲得する！",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -991,7 +991,7 @@ def data4():
               {
                 "type": "text",
                 "text": "[目標 例2]",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -1007,7 +1007,7 @@ def data4():
               {
                 "type": "text",
                 "text": "まだない",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
@@ -1089,7 +1089,7 @@ def data5(text):
               {
                 "type": "text",
                 "text": "下のボタンからテンプレートを受け取れるので、テンプレートを元に参加後オープンチャットのノートに自己紹介を書き込んで下さい！",
-                "wrap": true,
+                "wrap": True,
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5
