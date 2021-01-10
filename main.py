@@ -1313,7 +1313,7 @@ def data7(text):
     return data
 
 def text(user_id):
-    data = '名前:自分の名前を入力\n自分のTwitter:{twitter}\n動画編集歴:{d_n}\nこれからの目標:{d_t}\nみんなへ一言:'.format(twitter=set[user_id][twitter],d_n=set[user_id][d_n],d_t=set[user_id][d_t])
+    data = '名前:自分の名前を入力\n自分のTwitter:{twitter}\n動画編集歴:{d_n}\nこれからの目標:{d_t}\nみんなへ一言:'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'])
     return data
 
 #環境変数取得
@@ -1412,7 +1412,7 @@ def on_postback(event):
     if "ok3" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 8:
         set[user_id]['n'] = 9
         text_ = text(user_id)
-        line_bot_api.multicast(['U76d18383a9b659b9ab3d0e43d06c1e78'],TextSendMessage(text='誰かが参加しようとしています！\n[詳細]\nTwitter:{twitter}\n動画編集歴:{d_n}\n目標:{d_t}'.format(twitter=set[user_id][twitter],d_n=set[user_id][d_n],d_t=set[user_id][d_t])))
+        line_bot_api.multicast(['U76d18383a9b659b9ab3d0e43d06c1e78'],TextSendMessage(text='誰かが参加しようとしています！\n[詳細]\nTwitter:{twitter}\n動画編集歴:{d_n}\n目標:{d_t}'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'])))
         data = data5(text_)
         flex = {"type": "flex","altText": "テンプレート配布","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
