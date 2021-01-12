@@ -1776,7 +1776,7 @@ def on_postback(event):
         set[user_id]['n'] = 10
         text_ = text(user_id)
         q = postback_msg
-        line_bot_api.multicast(['U76d18383a9b659b9ab3d0e43d06c1e78'],TextSendMessage(text='誰かが参加しようとしています！\n[詳細]\nTwitter:{twitter}\n動画編集歴:{d_n}\n目標:{d_t}\n悩み:{q}'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'],q=q)))
+        line_bot_api.multicast(['U76d18383a9b659b9ab3d0e43d06c1e78','U6884dfdb4c4091381363d84965956f2f'],TextSendMessage(text='誰かが参加しようとしています！\n[詳細]\nTwitter:{twitter}\n動画編集歴:{d_n}\n目標:{d_t}\n悩み:{q}'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'],q=q)))
         data = data5(text_)
         flex = {"type": "flex","altText": "テンプレート配布","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
