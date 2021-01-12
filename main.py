@@ -50,7 +50,7 @@ def syoukai():
     "contents": [
       {
         "type": "text",
-        "text": "集まれ動画編集者森",
+        "text": "あつまれ動画編集者森",
         "weight": "bold",
         "size": "xl",
         "align": "center"
@@ -378,7 +378,7 @@ def twitter():
             "contents": [
               {
                 "type": "text",
-                "text": "・集まれ動画編集の森では信頼を大切にしています。",
+                "text": "・あつまれ動画編集の森では信頼を大切にしています。",
                 "wrap": True,
                 "color": "#666666",
                 "size": "sm",
@@ -394,7 +394,7 @@ def twitter():
             "contents": [
               {
                 "type": "text",
-                "text": "・信頼関係をつくる為、Twitterの名前での参加がルールで決まっています。",
+                "text": "・信頼関係を築く為、Twitter名での参加がルールとなっています。",
                 "wrap": True,
                 "color": "#666666",
                 "size": "sm",
@@ -415,7 +415,7 @@ def twitter():
                 "size": "sm",
                 "flex": 5,
                 "align": "start",
-                "text": "・この後自己紹介用のテンプレートを配布するにあたって自分のTwitter情報を登録してもらいます。"
+                "text": "・この後自己紹介用のテンプレートを配布するにあたって自分のTwitter情報を登録して頂きます。"
               }
             ]
           }
@@ -439,7 +439,7 @@ def twitter():
       },
       {
         "type": "text",
-        "text": "を送信してもらいます",
+        "text": "を送信して頂きます",
         "weight": "bold",
         "size": "md",
         "align": "center",
@@ -689,7 +689,7 @@ def data2():
                 "size": "sm",
                 "flex": 5,
                 "align": "start",
-                "text": "・この後自己紹介用のテンプレートを配布するにあたって自分の動画編集歴を登録してもらいます。"
+                "text": "・この後自己紹介用のテンプレートを配布するにあたって自分の動画編集歴を登録して頂きます。"
               }
             ]
           }
@@ -898,156 +898,156 @@ def data3(data_):
 
 def data4():
     data = {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://cdn.pixabay.com/photo/2016/03/09/09/43/person-1245959_1280.jpg",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://cdn.pixabay.com/photo/2016/03/09/09/43/person-1245959_1280.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "http://linecorp.com/"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "目標の登録",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "start",
+                    "text": "・この後自己紹介用のテンプレートを配布するにあたって自分の目標を登録して頂きます。"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "[目標 例]",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "案件を獲得する！",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "人脈を増やしたい！",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "まずは編集を経験してみたい！",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "上の例を参考に",
+            "weight": "bold",
+            "size": "xs",
+            "align": "center",
+            "margin": "md"
+          },
+          {
+            "type": "text",
+            "text": "自分の目標を送信してください！",
+            "weight": "bold",
+            "size": "xs",
+            "align": "center",
+            "margin": "none"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "spacer",
+            "size": "sm"
+          }
+        ],
+        "flex": 0
+      }
     }
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "目標の登録",
-        "weight": "bold",
-        "size": "xl",
-        "align": "center"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "start",
-                "text": "・この後自己紹介用のテンプレートを配布するにあたって自分の目標を登録してもらいます。"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "[目標 例]",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "まずは案件を獲得する！",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "[目標 例2]",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "まだない",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": "上の二つの例を参考に",
-        "weight": "bold",
-        "size": "xs",
-        "align": "center",
-        "margin": "md"
-      },
-      {
-        "type": "text",
-        "text": "自分の目標を送信してください！",
-        "weight": "bold",
-        "size": "xs",
-        "align": "center",
-        "margin": "none"
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "spacer",
-        "size": "sm"
-      }
-    ],
-    "flex": 0
-  }
-}
     return data
 
 def data5(text):
@@ -1128,35 +1128,52 @@ def data5(text):
 
 def data6():
     data = {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://cdn.pixabay.com/photo/2016/10/24/23/11/doors-1767562_1280.jpg",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "さあ、入ろう！",
-        "weight": "bold",
-        "size": "xxl",
-        "align": "center"
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://cdn.pixabay.com/photo/2016/10/24/23/11/doors-1767562_1280.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "http://linecorp.com/"
+        }
       },
-      {
+      "body": {
         "type": "box",
         "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
         "contents": [
+          {
+            "type": "text",
+            "text": "さあ、参加しよう！",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "登録おつかれ様でした！",
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              }
+            ]
+          },
           {
             "type": "box",
             "layout": "baseline",
@@ -1164,56 +1181,47 @@ def data6():
             "contents": [
               {
                 "type": "text",
-                "text": "登録おつかれ様でした！",
+                "text": "下のボタンから参加しましょう！",
                 "color": "#666666",
                 "size": "sm",
                 "flex": 5,
                 "align": "center"
               }
             ]
+          },
+          {
+            "type": "text",
+            "text": "参加後自己紹介文をノートに貼ろう！",
+            "weight": "bold",
+            "size": "sm",
+            "align": "center",
+            "margin": "sm"
           }
         ]
       },
-      {
+      "footer": {
         "type": "box",
-        "layout": "baseline",
+        "layout": "vertical",
         "spacing": "sm",
         "contents": [
           {
-            "type": "text",
-            "text": "下のボタンから参加しましょう！",
-            "color": "#666666",
-            "size": "sm",
-            "flex": 5,
-            "align": "center"
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "action": {
+              "type": "uri",
+              "label": "参加！",
+              "uri": "https://line.me/ti/g2/lDVbXX6utEKgPM-QB3tylA?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default"
+            }
+          },
+          {
+            "type": "spacer",
+            "size": "sm"
           }
-        ]
+        ],
+        "flex": 0
       }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "style": "primary",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "参加！",
-          "uri": "https://line.me/ti/g2/lDVbXX6utEKgPM-QB3tylA?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default"
-        }
-      },
-      {
-        "type": "spacer",
-        "size": "sm"
-      }
-    ],
-    "flex": 0
-  }
-}
+    }
     return data
 
 def data7(text):
@@ -1312,8 +1320,331 @@ def data7(text):
 }
     return data
 
+def data8():
+    data = {
+      "type": "carousel",
+      "contents": [
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover",
+            "url": "https://cdn.pixabay.com/photo/2017/05/02/10/01/checklist-2277702_1280.jpg"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "アンケート",
+                "wrap": True,
+                "weight": "bold",
+                "size": "xxl",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "にご協力ください！",
+                "wrap": True,
+                "weight": "bold",
+                "size": "xl",
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "右にある4つの悩みのうち",
+                    "wrap": True,
+                    "weight": "bold",
+                    "size": "xs",
+                    "align": "center",
+                    "margin": "none"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "wrap": True,
+                    "weight": "bold",
+                    "size": "xs",
+                    "align": "center",
+                    "text": "自分に当てはまるものを選択してください！"
+                  }
+                ]
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://charbase.com/images/glyph/10137",
+                "size": "lg",
+                "aspectMode": "cover"
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover",
+            "url": "https://cdn.pixabay.com/photo/2016/01/31/20/20/frightened-1172122_1280.jpg"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "今の編集スキルで",
+                "wrap": True,
+                "weight": "bold",
+                "size": "xl",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "案件を最後までこなせるか不安...",
+                "wrap": True,
+                "weight": "bold",
+                "size": "md",
+                "align": "center"
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://static.thenounproject.com/png/76988-200.png",
+                "size": "lg",
+                "aspectMode": "cover"
+              },
+              {
+                "type": "button",
+                "style": "primary",
+                "action": {
+                  "type": "postback",
+                  "label": "これを選ぶ",
+                  "data": "1",
+                  "displayText": "1番目を選んだよ！"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover",
+            "url": "https://cdn.pixabay.com/photo/2020/08/31/00/29/man-5531026_1280.jpg"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "実績がないから",
+                "wrap": True,
+                "weight": "bold",
+                "size": "xl",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "クラウドソーシングに応募しても",
+                "wrap": True,
+                "weight": "bold",
+                "size": "md",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "なかなか案件を獲得できない...",
+                "wrap": True,
+                "weight": "bold",
+                "size": "md",
+                "align": "center"
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://static.thenounproject.com/png/76988-200.png",
+                "size": "lg",
+                "aspectMode": "cover"
+              },
+              {
+                "type": "button",
+                "style": "primary",
+                "action": {
+                  "type": "postback",
+                  "label": "これを選ぶ",
+                  "data": "2",
+                  "displayText": "2番目を選んだよ！"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover",
+            "url": "https://cdn.pixabay.com/photo/2014/07/12/14/55/bus-stop-391242_1280.jpg"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "営業文の",
+                "wrap": True,
+                "weight": "bold",
+                "size": "xl",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "書き方がわからない...",
+                "wrap": True,
+                "weight": "bold",
+                "size": "md",
+                "align": "center"
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://static.thenounproject.com/png/76988-200.png",
+                "size": "lg",
+                "aspectMode": "cover"
+              },
+              {
+                "type": "button",
+                "style": "primary",
+                "action": {
+                  "type": "postback",
+                  "label": "これを選ぶ",
+                  "data": "3",
+                  "displayText": "3番目を選んだよ！"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "bubble",
+          "hero": {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "20:13",
+            "aspectMode": "cover",
+            "url": "https://cdn.pixabay.com/photo/2017/08/25/21/46/upset-2681502_1280.jpg"
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "発注者と",
+                "wrap": True,
+                "weight": "bold",
+                "size": "xl",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "上手くコミュニケーションが",
+                "wrap": True,
+                "weight": "bold",
+                "size": "md",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "取れるか心配...",
+                "wrap": True,
+                "weight": "bold",
+                "size": "md",
+                "align": "center"
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://static.thenounproject.com/png/76988-200.png",
+                "size": "lg",
+                "aspectMode": "cover"
+              },
+              {
+                "type": "button",
+                "style": "primary",
+                "action": {
+                  "type": "postback",
+                  "label": "これを選ぶ",
+                  "data": "4",
+                  "displayText": "4番目を選んだよ！"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    return data
+
 def text(user_id):
-    data = '名前:自分の名前を入力\n自分のTwitter:{twitter}\n動画編集歴:{d_n}\nこれからの目標:{d_t}\nみんなへ一言:'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'])
+    data = '名前:自分の名前を入力\n自分のTwitter:{twitter}\n動画編集歴:{d_n}\nこれからの目標:{d_t}\nポートフォリオのURL:\nみんなへ一言:'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'])
     return data
 
 #環境変数取得
@@ -1411,14 +1742,22 @@ def on_postback(event):
 
     if "ok3" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 8:
         set[user_id]['n'] = 9
+        data = data8()
+        flex = {"type": "flex","altText": "アンケート","contents":data}
+        container_obj = FlexSendMessage.new_from_json_dict(flex)
+        line_bot_api.reply_message(reply_token,messages=container_obj)
+
+    if postback_msg in ['1','2','3','4'] and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 9:
+        set[user_id]['n'] = 10
         text_ = text(user_id)
-        line_bot_api.multicast(['U76d18383a9b659b9ab3d0e43d06c1e78'],TextSendMessage(text='誰かが参加しようとしています！\n[詳細]\nTwitter:{twitter}\n動画編集歴:{d_n}\n目標:{d_t}'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'])))
+        q = postback_msg
+        line_bot_api.multicast(['U76d18383a9b659b9ab3d0e43d06c1e78'],TextSendMessage(text='誰かが参加しようとしています！\n[詳細]\nTwitter:{twitter}\n動画編集歴:{d_n}\n目標:{d_t}\n悩み:{q}'.format(twitter=set[user_id]['twitter'],d_n=set[user_id]['d_n'],d_t=set[user_id]['d_t'],q=q)))
         data = data5(text_)
         flex = {"type": "flex","altText": "テンプレート配布","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(reply_token,messages=container_obj)
 
-    if "受け取る" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 9:
+    if "受け取る" in postback_msg and user_id == set[user_id]['user_id'] and set[user_id]['n'] == 10:
         data = data6()
         flex = {"type": "flex","altText": "入ろう！","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
@@ -1437,12 +1776,16 @@ def handle_message(event):
     msg_id = event.message.id
     user_id = event.source.user_id
 
-    if msg_text == '集まれ動画編集の森に入る':
+    if msg_text == 'あつまれ動画編集の森に入る':
         data = syoukai()
-        set[user_id] = {'user_id':user_id,'n':1,'twitter':'','d_n':'','d_t':''}
+        set[user_id] = {'user_id':user_id,'n':1,'twitter':'','d_n':'','d_t':'','text':''}
         flex = {"type": "flex","altText": "ようこそ！","contents":data}
         container_obj = FlexSendMessage.new_from_json_dict(flex)
         line_bot_api.reply_message(msg_from,messages=container_obj)
+        return
+
+    if msg_text == 'user_id':
+        line_bot_api.reply_message(msg_from,TextSendMessage(text=user_id))
         return
 
     else:
