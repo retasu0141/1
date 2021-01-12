@@ -32,50 +32,68 @@ set = {}
 
 def syoukai():
     data = {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_1280.jpg",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "あつまれ動画編集者森",
-        "weight": "bold",
-        "size": "xl",
-        "align": "center"
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_1280.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "http://linecorp.com/"
+        }
       },
-      {
-        "type": "text",
-        "text": "受付へようこそ！",
-        "weight": "bold",
-        "size": "xl",
-        "align": "center"
-      },
-      {
-        "type": "text",
-        "text": "ここでは以下のことを行います",
-        "weight": "bold",
-        "size": "md",
-        "align": "center",
-        "margin": "md"
-      },
-      {
+      "body": {
         "type": "box",
         "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
         "contents": [
+          {
+            "type": "text",
+            "text": "あつまれ動画編集者森",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "受付へようこそ！",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "ここでは以下のことを行います",
+            "weight": "bold",
+            "size": "md",
+            "align": "center",
+            "margin": "md"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "参加ルールの説明",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              }
+            ]
+          },
           {
             "type": "box",
             "layout": "baseline",
@@ -83,7 +101,24 @@ def syoukai():
             "contents": [
               {
                 "type": "text",
-                "text": "参加ルールの説明",
+                "text": "自分のTwitterの登録",
+                "wrap": True,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5,
+                "align": "center",
+                "margin": "none"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "動画編集歴の登録",
                 "wrap": True,
                 "color": "#666666",
                 "size": "sm",
@@ -91,124 +126,105 @@ def syoukai():
                 "align": "center"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "baseline",
-        "spacing": "sm",
-        "contents": [
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "自分のこれからの目標の登録",
+                "wrap": True,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "悩み事アンケート",
+                "wrap": True,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "参加後ノートに作成する自己紹介文配布",
+                "wrap": True,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5,
+                "align": "center"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "動画編集者の森へ招待！",
+                "wrap": True,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5,
+                "align": "center"
+              }
+            ]
+          },
           {
             "type": "text",
-            "text": "自分のTwitterの登録",
-            "wrap": True,
-            "color": "#666666",
-            "size": "sm",
-            "flex": 5,
+            "text": "下のボタンを押して次に進もう！",
+            "weight": "bold",
+            "size": "md",
             "align": "center",
-            "margin": "none"
+            "margin": "md"
           }
         ]
       },
-      {
+      "footer": {
         "type": "box",
-        "layout": "baseline",
+        "layout": "vertical",
         "spacing": "sm",
         "contents": [
           {
-            "type": "text",
-            "text": "動画編集歴の登録",
-            "wrap": True,
-            "color": "#666666",
-            "size": "sm",
-            "flex": 5,
-            "align": "center"
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "baseline",
-        "spacing": "sm",
-        "contents": [
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "action": {
+              "type": "postback",
+              "label": "注意事項を聞く",
+              "data": "注意事項",
+              "displayText": "参加ルールを教えて！"
+            }
+          },
           {
-            "type": "text",
-            "text": "自分のこれからの目標の登録",
-            "wrap": True,
-            "color": "#666666",
-            "size": "sm",
-            "flex": 5,
-            "align": "center"
+            "type": "spacer",
+            "size": "sm"
           }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "baseline",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "参加後ノートに作成する自己紹介文配布",
-            "wrap": True,
-            "color": "#666666",
-            "size": "sm",
-            "flex": 5,
-            "align": "center"
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "baseline",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "動画編集者の森へ招待！",
-            "wrap": True,
-            "color": "#666666",
-            "size": "sm",
-            "flex": 5,
-            "align": "center"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "text": "下のボタンを押して次に進もう！",
-        "weight": "bold",
-        "size": "md",
-        "align": "center",
-        "margin": "md"
+        ],
+        "flex": 0
       }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "style": "primary",
-        "height": "sm",
-        "action": {
-          "type": "postback",
-          "label": "注意事項を聞く",
-          "data": "注意事項",
-          "displayText": "参加ルールを教えて！"
-        }
-      },
-      {
-        "type": "spacer",
-        "size": "sm"
-      }
-    ],
-    "flex": 0
-  }
-}
+    }
     return data
 
 def attention():
