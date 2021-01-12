@@ -50,7 +50,7 @@ def syoukai():
         "contents": [
           {
             "type": "text",
-            "text": "あつまれ動画編集者森",
+            "text": "あつまれ動画編集者の森",
             "weight": "bold",
             "size": "xl",
             "align": "center"
@@ -280,7 +280,7 @@ def attention():
               },
               {
                 "type": "text",
-                "text": "ツイッターのアカウント名で参加する。",
+                "text": "Twitterのアカウント名で参加する。",
                 "wrap": True,
                 "color": "#666666",
                 "size": "sm",
@@ -341,7 +341,7 @@ def attention():
         "height": "sm",
         "action": {
           "type": "postback",
-          "label": "ツイッターの登録",
+          "label": "Twitterの登録",
           "data": "twitter",
           "displayText": "Twitterの登録をするよ！"
         }
