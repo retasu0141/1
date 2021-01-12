@@ -83,7 +83,7 @@ def syoukai():
             "contents": [
               {
                 "type": "text",
-                "text": "入るにあたっての注意事項の説明",
+                "text": "参加ルールの説明",
                 "wrap": True,
                 "color": "#666666",
                 "size": "sm",
@@ -198,7 +198,7 @@ def syoukai():
           "type": "postback",
           "label": "注意事項を聞く",
           "data": "注意事項",
-          "displayText": "注意事項を教えて！"
+          "displayText": "参加ルールを教えて！"
         }
       },
       {
@@ -231,7 +231,7 @@ def attention():
     "contents": [
       {
         "type": "text",
-        "text": "注意事項の説明",
+        "text": "参加ルールの説明",
         "weight": "bold",
         "size": "xl",
         "align": "center"
@@ -648,40 +648,51 @@ def data1(twitter):
 
 def data2():
     data = {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://cdn.pixabay.com/photo/2016/01/15/12/02/editing-1141505_1280.jpg",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "動画編集歴の登録",
-        "weight": "bold",
-        "size": "xl",
-        "align": "center"
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://cdn.pixabay.com/photo/2016/01/15/12/02/editing-1141505_1280.jpg",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "http://linecorp.com/"
+        }
       },
-      {
+      "body": {
         "type": "box",
         "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
         "contents": [
           {
+            "type": "text",
+            "text": "動画編集歴の登録",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          },
+          {
             "type": "box",
-            "layout": "baseline",
+            "layout": "vertical",
+            "margin": "lg",
             "spacing": "sm",
             "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "start",
+                    "text": "・この後自己紹介用のテンプレートを配布するにあたって自分の動画編集歴を登録して頂きます。"
+                  }
+                ]
+              },
               {
                 "type": "text",
                 "wrap": True,
@@ -689,115 +700,113 @@ def data2():
                 "size": "sm",
                 "flex": 5,
                 "align": "start",
-                "text": "・この後自己紹介用のテンプレートを配布するにあたって自分の動画編集歴を登録して頂きます。"
+                "text": "・動画編集でなくても活動履歴などを書いて頂いて結構です"
               }
             ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "margin": "lg",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "[動画編集歴 例]",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "2020年6月辺りから",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ゲーム実況を2019年辺りから",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "spacing": "sm",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "最近始めたばかり",
+                    "wrap": True,
+                    "color": "#666666",
+                    "size": "sm",
+                    "flex": 5,
+                    "align": "center"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "上の例を参考に",
+            "weight": "bold",
+            "size": "xs",
+            "align": "center",
+            "margin": "md"
+          },
+          {
+            "type": "text",
+            "text": "自分の動画編集歴を送信してください！",
+            "weight": "bold",
+            "size": "xs",
+            "align": "center",
+            "margin": "none"
           }
         ]
       },
-      {
+      "footer": {
         "type": "box",
         "layout": "vertical",
-        "margin": "lg",
         "spacing": "sm",
         "contents": [
           {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "[動画編集歴 例]",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "2020年6月辺りから",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "[動画編集歴 例2]",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "最近始めたばかり",
-                "wrap": True,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5,
-                "align": "center"
-              }
-            ]
+            "type": "spacer",
+            "size": "sm"
           }
-        ]
-      },
-      {
-        "type": "text",
-        "text": "上の二つの例を参考に",
-        "weight": "bold",
-        "size": "xs",
-        "align": "center",
-        "margin": "md"
-      },
-      {
-        "type": "text",
-        "text": "自分の動画編集歴を送信してください！",
-        "weight": "bold",
-        "size": "xs",
-        "align": "center",
-        "margin": "none"
+        ],
+        "flex": 0
       }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "spacer",
-        "size": "sm"
-      }
-    ],
-    "flex": 0
-  }
-}
+    }
     return data
 
 def data3(data_):
