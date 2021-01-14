@@ -35,7 +35,7 @@ def syoukai():
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297_1280.jpg",
+        "url": "https://live.staticflickr.com/65535/50834110728_1395d79f76_n.jpg",
         "size": "full",
         "aspectRatio": "20:13",
         "aspectMode": "cover",
@@ -50,7 +50,7 @@ def syoukai():
         "contents": [
           {
             "type": "text",
-            "text": "あつまれ動画編集者の森",
+            "text": "Editor‘s Camp",
             "weight": "bold",
             "size": "xl",
             "align": "center"
@@ -212,7 +212,7 @@ def syoukai():
             "height": "sm",
             "action": {
               "type": "postback",
-              "label": "注意事項を聞く",
+              "label": "参加ルールを聞く",
               "data": "注意事項",
               "displayText": "参加ルールを教えて！"
             }
@@ -1801,7 +1801,7 @@ def handle_message(event):
     msg_id = event.message.id
     user_id = event.source.user_id
 
-    if msg_text == 'あつまれ動画編集の森に入る':
+    if msg_text == 'Editor‘s Campに入る':
         data = syoukai()
         set[user_id] = {'user_id':user_id,'n':1,'twitter':'','d_n':'','d_t':'','text':''}
         flex = {"type": "flex","altText": "ようこそ！","contents":data}
